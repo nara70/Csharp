@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CITYREGION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NAME_" Type="char" MaxLength="50" />
+          <Property Name="ADDRESS" Type="char" MaxLength="50" />
+          <Property Name="AMOUNTOFINHABITATS" Type="number" Precision="38" Scale="0" />
+          <Property Name="AREA" Type="number" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="HOUSE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TYPEOFPROJECT" Type="char" MaxLength="50" />
+          <Property Name="AMOUNTOFFLOORS" Type="number" Precision="38" Scale="0" />
+          <Property Name="AMOUNTOFENTRANCES" Type="number" Precision="38" Scale="0" />
+          <Property Name="DATE_" Type="char" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="HOUSEREGIONLINK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="HOUSE_ID" Type="number" Precision="38" Scale="0" />
+          <Property Name="REGION_ID" Type="number" Precision="38" Scale="0" />
+        </EntityType>
+        <Association Name="HS_ID">
+          <End Role="HOUSE" Type="Self.HOUSE" Multiplicity="0..1" />
+          <End Role="HOUSEREGIONLINK" Type="Self.HOUSEREGIONLINK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HOUSE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HOUSEREGIONLINK">
+              <PropertyRef Name="HOUSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RG_ID">
+          <End Role="CITYREGION" Type="Self.CITYREGION" Multiplicity="0..1" />
+          <End Role="HOUSEREGIONLINK" Type="Self.HOUSEREGIONLINK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CITYREGION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HOUSEREGIONLINK">
+              <PropertyRef Name="REGION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="CITYREGION" EntityType="Self.CITYREGION" Schema="ANTON" store:Type="Tables" />
+          <EntitySet Name="HOUSE" EntityType="Self.HOUSE" Schema="ANTON" store:Type="Tables" />
+          <EntitySet Name="HOUSEREGIONLINK" EntityType="Self.HOUSEREGIONLINK" Schema="ANTON" store:Type="Tables" />
+          <AssociationSet Name="HS_ID" Association="Self.HS_ID">
+            <End Role="HOUSE" EntitySet="HOUSE" />
+            <End Role="HOUSEREGIONLINK" EntitySet="HOUSEREGIONLINK" />
+          </AssociationSet>
+          <AssociationSet Name="RG_ID" Association="Self.RG_ID">
+            <End Role="CITYREGION" EntitySet="CITYREGION" />
+            <End Role="HOUSEREGIONLINK" EntitySet="HOUSEREGIONLINK" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CITYREGION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NAME_" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="AMOUNTOFINHABITATS" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="AREA" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="HOUSEREGIONLINKs" Relationship="Self.RG_ID" FromRole="CITYREGION" ToRole="HOUSEREGIONLINK" />
+        </EntityType>
+        <EntityType Name="HOUSE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TYPEOFPROJECT" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="AMOUNTOFFLOORS" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="AMOUNTOFENTRANCES" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DATE_" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="HOUSEREGIONLINKs" Relationship="Self.HS_ID" FromRole="HOUSE" ToRole="HOUSEREGIONLINK" />
+        </EntityType>
+        <EntityType Name="HOUSEREGIONLINK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="HOUSE_ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="REGION_ID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="CITYREGION" Relationship="Self.RG_ID" FromRole="HOUSEREGIONLINK" ToRole="CITYREGION" />
+          <NavigationProperty Name="HOUSE" Relationship="Self.HS_ID" FromRole="HOUSEREGIONLINK" ToRole="HOUSE" />
+        </EntityType>
+        <Association Name="RG_ID">
+          <End Role="CITYREGION" Type="Self.CITYREGION" Multiplicity="0..1" />
+          <End Role="HOUSEREGIONLINK" Type="Self.HOUSEREGIONLINK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CITYREGION">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HOUSEREGIONLINK">
+              <PropertyRef Name="REGION_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HS_ID">
+          <End Role="HOUSE" Type="Self.HOUSE" Multiplicity="0..1" />
+          <End Role="HOUSEREGIONLINK" Type="Self.HOUSEREGIONLINK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HOUSE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="HOUSEREGIONLINK">
+              <PropertyRef Name="HOUSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CITYREGIONs" EntityType="Self.CITYREGION" />
+          <EntitySet Name="Houses" EntityType="Self.HOUSE" />
+          <EntitySet Name="HOUSEREGIONLINKs" EntityType="Self.HOUSEREGIONLINK" />
+          <AssociationSet Name="RG_ID" Association="Self.RG_ID">
+            <End Role="CITYREGION" EntitySet="CITYREGIONs" />
+            <End Role="HOUSEREGIONLINK" EntitySet="HOUSEREGIONLINKs" />
+          </AssociationSet>
+          <AssociationSet Name="HS_ID" Association="Self.HS_ID">
+            <End Role="HOUSE" EntitySet="Houses" />
+            <End Role="HOUSEREGIONLINK" EntitySet="HOUSEREGIONLINKs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="CITYREGIONs">
+            <EntityTypeMapping TypeName="Model.CITYREGION">
+              <MappingFragment StoreEntitySet="CITYREGION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME_" ColumnName="NAME_" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="AMOUNTOFINHABITATS" ColumnName="AMOUNTOFINHABITATS" />
+                <ScalarProperty Name="AREA" ColumnName="AREA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Houses">
+            <EntityTypeMapping TypeName="Model.HOUSE">
+              <MappingFragment StoreEntitySet="HOUSE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TYPEOFPROJECT" ColumnName="TYPEOFPROJECT" />
+                <ScalarProperty Name="AMOUNTOFFLOORS" ColumnName="AMOUNTOFFLOORS" />
+                <ScalarProperty Name="AMOUNTOFENTRANCES" ColumnName="AMOUNTOFENTRANCES" />
+                <ScalarProperty Name="DATE_" ColumnName="DATE_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HOUSEREGIONLINKs">
+            <EntityTypeMapping TypeName="Model.HOUSEREGIONLINK">
+              <MappingFragment StoreEntitySet="HOUSEREGIONLINK">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HOUSE_ID" ColumnName="HOUSE_ID" />
+                <ScalarProperty Name="REGION_ID" ColumnName="REGION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

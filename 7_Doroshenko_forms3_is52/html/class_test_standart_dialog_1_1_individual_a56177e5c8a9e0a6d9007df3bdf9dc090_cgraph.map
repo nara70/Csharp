@@ -1,0 +1,22 @@
+<map id="TestStandartDialog.Individual.InitializeComponent" name="TestStandartDialog.Individual.InitializeComponent">
+<area shape="rect" id="node2" href="$class_test_standart_dialog_1_1_individual.html#a0bf99589355818c055ef59f1d5d83ad8" title="TestStandartDialog.Individual.new\lToolStripMenuItem_Click" alt="" coords="248,5,463,47"/>
+<area shape="rect" id="node3" href="$class_test_standart_dialog_1_1_individual.html#ad75540e4fb7165e6ce018bbe25046262" title="TestStandartDialog.Individual.open\lToolStripMenuItem_Click" alt="" coords="245,71,465,112"/>
+<area shape="rect" id="node4" href="$class_test_standart_dialog_1_1_individual.html#a4ea5470973faa3ff9a1a26f7552da0f7" title="TestStandartDialog.Individual.save\lToolStripMenuItem_Click" alt="" coords="246,136,465,177"/>
+<area shape="rect" id="node11" href="$class_test_standart_dialog_1_1_individual.html#a3f94953a64a0f2e9b8e2768363356ad6" title="TestStandartDialog.Individual.save\lToolStripMenuItem1_Click" alt="" coords="246,201,465,243"/>
+<area shape="rect" id="node12" href="$class_test_standart_dialog_1_1_individual.html#afe3ce0ece91f0c0931dc9acfacb05ee9" title="TestStandartDialog.Individual.font\lToolStripMenuItem_Click" alt="" coords="249,397,462,439"/>
+<area shape="rect" id="node13" href="$class_test_standart_dialog_1_1_individual.html#a8232a358274349de962496dd3e84cd14" title="TestStandartDialog.Individual.color\lToolStripMenuItem_Click" alt="" coords="245,463,465,504"/>
+<area shape="rect" id="node14" href="$class_test_standart_dialog_1_1_individual.html#a669df49cb80ca39c3922d4f3a6a2097e" title="TestStandartDialog.Individual.exit\lToolStripMenuItem_Click" alt="" coords="249,528,462,569"/>
+<area shape="rect" id="node15" href="$class_test_standart_dialog_1_1_individual.html#ae108eb84c0fed2b10eb1f11399330149" title="TestStandartDialog.Individual.tool\lStripButton1_Click" alt="" coords="249,593,462,635"/>
+<area shape="rect" id="node16" href="$class_test_standart_dialog_1_1_individual.html#accc5796ca6c39d895aeec0b52c0b1381" title="TestStandartDialog.Individual.tool\lStripButton2_Click" alt="" coords="249,659,462,700"/>
+<area shape="rect" id="node17" href="$class_test_standart_dialog_1_1_individual.html#a19353321afad29fb62ec47a2cc17cd45" title="TestStandartDialog.Individual.tool\lStripButton3_Click" alt="" coords="249,267,462,308"/>
+<area shape="rect" id="node18" href="$class_test_standart_dialog_1_1_individual.html#a0cf3924f758f7894fc477256844ed1bb" title="TestStandartDialog.Individual.tool\lStripButton4_Click" alt="" coords="249,332,462,373"/>
+<area shape="rect" id="node19" href="$class_test_standart_dialog_1_1_individual.html#adcd7a07b2fb22e039487ed8e810e3bb4" title="TestStandartDialog.Individual.tool\lStripButton5_Click" alt="" coords="249,724,462,765"/>
+<area shape="rect" id="node20" href="$class_test_standart_dialog_1_1_individual.html#a437aee5ea36d127eabe2c6cdecddaac4" title="TestStandartDialog.Individual.tool\lStripButton6_Click" alt="" coords="249,789,462,831"/>
+<area shape="rect" id="node21" href="$class_test_standart_dialog_1_1_individual.html#a6960ea085008ca7fb24af8c425ad64e7" title="TestStandartDialog.Individual.tool\lStripButton7_Click" alt="" coords="249,855,462,896"/>
+<area shape="rect" id="node5" href="$class_test_standart_dialog_1_1_individual.html#a02301e8b2cf65e3729fb21a1181ecfcb" title="TestStandartDialog.Individual.\lIsOpen" alt="" coords="519,71,711,112"/>
+<area shape="rect" id="node6" href="$class_test_standart_dialog_1_1_teacher.html#a242487fa08e7f38e129aefe1fde97a00" title="TestStandartDialog.Teacher.get\lText1" alt="" coords="513,136,717,177"/>
+<area shape="rect" id="node7" href="$class_test_standart_dialog_1_1_teacher.html#a48650e778c9dde5606d25597c9068892" title="TestStandartDialog.Teacher.get\lText2" alt="" coords="513,201,717,243"/>
+<area shape="rect" id="node8" href="$class_test_standart_dialog_1_1_teacher.html#ac7f64d23b198647c5e38076c28642eaf" title="TestStandartDialog.Teacher.get\lText3" alt="" coords="513,267,717,308"/>
+<area shape="rect" id="node9" href="$class_test_standart_dialog_1_1_teacher.html#abe28585ee556a5b4c29ecb82146ff7b4" title="TestStandartDialog.Teacher.get\lText4" alt="" coords="513,332,717,373"/>
+<area shape="rect" id="node10" href="$class_test_standart_dialog_1_1_teacher.html#a1aca2f17bebaa54cf123cac05631717d" title="TestStandartDialog.Teacher.get\lText5" alt="" coords="513,397,717,439"/>
+</map>

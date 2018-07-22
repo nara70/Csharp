@@ -1,0 +1,28 @@
+var class_test_standart_dialog_1_1_task__4 =
+[
+    [ "Task_4", "class_test_standart_dialog_1_1_task__4.html#a6447f4422dc5bddba4f087416ce897ae", null ],
+    [ "Dispose", "class_test_standart_dialog_1_1_task__4.html#a46a0a1ada795844acdf9ba68319755d8", null ],
+    [ "InitializeComponent", "class_test_standart_dialog_1_1_task__4.html#ad230aab39d18dca6adf6fd97ce2b4d29", null ],
+    [ "saveFileDialog1_FileOk", "class_test_standart_dialog_1_1_task__4.html#a41d723362e52766d396153e723fefcf2", null ],
+    [ "toolStripMenuItem2_Click", "class_test_standart_dialog_1_1_task__4.html#a433564fec21af24733963d0a518831e1", null ],
+    [ "toolStripMenuItem4_Click", "class_test_standart_dialog_1_1_task__4.html#ad5bb47a4e0620fc99bbad8cd3838ff84", null ],
+    [ "toolStripMenuItem5_Click", "class_test_standart_dialog_1_1_task__4.html#ab0f9edac6aec2da60c297caa95766b2b", null ],
+    [ "toolStripMenuItem6_Click", "class_test_standart_dialog_1_1_task__4.html#afb72dcedf4d2ab57f56ac3ba25a85e60", null ],
+    [ "toolStripTextBox1_Click", "class_test_standart_dialog_1_1_task__4.html#aedf3c68355dd7ecc1c77d14ded821803", null ],
+    [ "colorDialog1", "class_test_standart_dialog_1_1_task__4.html#a32f4e50c8bf47e2646a69c06d0704cf3", null ],
+    [ "components", "class_test_standart_dialog_1_1_task__4.html#a42b0b1c608bca2840243cbba609c8da2", null ],
+    [ "fontDialog1", "class_test_standart_dialog_1_1_task__4.html#a40904c1bf8576db2ecbea36fa76b28eb", null ],
+    [ "label1", "class_test_standart_dialog_1_1_task__4.html#a9300a137e72aea3a023a0d0911590da7", null ],
+    [ "menuStrip1", "class_test_standart_dialog_1_1_task__4.html#a6588139d82657a91d67a2cbedd9169be", null ],
+    [ "openFileDialog1", "class_test_standart_dialog_1_1_task__4.html#ad515c180fe2ea6f5326511faabfbc560", null ],
+    [ "pictureBox1", "class_test_standart_dialog_1_1_task__4.html#aa39b5d1eb478336a124cfd697bae5fff", null ],
+    [ "printDocument1", "class_test_standart_dialog_1_1_task__4.html#a6ae0d433660320b955f60d62dc1fdb93", null ],
+    [ "richTextBox1", "class_test_standart_dialog_1_1_task__4.html#a5c0bc6acce8f656c64d129ffbe7ce11a", null ],
+    [ "saveFileDialog1", "class_test_standart_dialog_1_1_task__4.html#a12a9e82cb8be088d1d3c999810c14e1f", null ],
+    [ "toolStripMenuItem1", "class_test_standart_dialog_1_1_task__4.html#a6ed1036032215918305fb9e27147a7c0", null ],
+    [ "toolStripMenuItem2", "class_test_standart_dialog_1_1_task__4.html#aaf18a6c03e48509bc1296d2a95f7d51b", null ],
+    [ "toolStripMenuItem3", "class_test_standart_dialog_1_1_task__4.html#a7a5477b9a42b679c3ec39d17f8704519", null ],
+    [ "toolStripMenuItem4", "class_test_standart_dialog_1_1_task__4.html#aa5a8a266e7aa132e5a312c536f9144e9", null ],
+    [ "toolStripMenuItem5", "class_test_standart_dialog_1_1_task__4.html#a14cf3b726c208ccf12a6a26bc5c17287", null ],
+    [ "toolStripMenuItem6", "class_test_standart_dialog_1_1_task__4.html#a98aef21ffdf5b3bd4b3188496e5e8a79", null ]
+];

@@ -1,0 +1,25 @@
+var class_windows_forms_application1_1_1_teacher =
+[
+    [ "Teacher", "class_windows_forms_application1_1_1_teacher.html#aeb976de07f9ec91987b013009eaa6779", null ],
+    [ "button1_Click", "class_windows_forms_application1_1_1_teacher.html#a44178f703cd7d58a3b8a0c95c0c31d96", null ],
+    [ "Dispose", "class_windows_forms_application1_1_1_teacher.html#a1177e0e4e711ab9526c0d8792d15828b", null ],
+    [ "getText1", "class_windows_forms_application1_1_1_teacher.html#a199bdd5f9724d3ff3578b9922f652584", null ],
+    [ "getText2", "class_windows_forms_application1_1_1_teacher.html#aec3d422b2bbdf57832ff40473f51cb9b", null ],
+    [ "getText3", "class_windows_forms_application1_1_1_teacher.html#ae49e5cd5e082355c50c025fd5e80d19d", null ],
+    [ "getText4", "class_windows_forms_application1_1_1_teacher.html#ab5453b32f89ec81ce5941034152a0e62", null ],
+    [ "getText5", "class_windows_forms_application1_1_1_teacher.html#a751d5c0b0369ae56df4dbde2a6d917f2", null ],
+    [ "InitializeComponent", "class_windows_forms_application1_1_1_teacher.html#a0a1dafd768344666955a8d8903436cb9", null ],
+    [ "button1", "class_windows_forms_application1_1_1_teacher.html#ac1b2cf639e9df9fc92ac0d11ff0c7494", null ],
+    [ "components", "class_windows_forms_application1_1_1_teacher.html#a3b703b2d7aa851b6ec913be863009e60", null ],
+    [ "helpProvider1", "class_windows_forms_application1_1_1_teacher.html#a1c1fe26b2c6390dc36687a412f70cef3", null ],
+    [ "label1", "class_windows_forms_application1_1_1_teacher.html#a977bd6a827757fcef01ae2f4932ed769", null ],
+    [ "label2", "class_windows_forms_application1_1_1_teacher.html#a2f9c82168f00575a33391f029df127ed", null ],
+    [ "label3", "class_windows_forms_application1_1_1_teacher.html#a6b9ee8d9cf1059346bea696e5805ab46", null ],
+    [ "label4", "class_windows_forms_application1_1_1_teacher.html#a0bf7a750ed55e89f68259d52afb6825f", null ],
+    [ "label5", "class_windows_forms_application1_1_1_teacher.html#ad71dbbaeb6f06ac55f2fcb3e11b3ca5a", null ],
+    [ "textBox1", "class_windows_forms_application1_1_1_teacher.html#a88dee5702d2b900a8864796e4d2f6d62", null ],
+    [ "textBox2", "class_windows_forms_application1_1_1_teacher.html#aa2e2fe34f78e0258eae73ce09d2c39c8", null ],
+    [ "textBox3", "class_windows_forms_application1_1_1_teacher.html#a48415459e265ee2bfa582a10f0b321a7", null ],
+    [ "textBox4", "class_windows_forms_application1_1_1_teacher.html#a4e68e34be5435de84b2b29e421091439", null ],
+    [ "textBox5", "class_windows_forms_application1_1_1_teacher.html#af6dcb402553d336646577ab1a6714028", null ]
+];

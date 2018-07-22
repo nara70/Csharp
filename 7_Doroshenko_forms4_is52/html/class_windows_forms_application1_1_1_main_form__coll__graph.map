@@ -1,0 +1,4 @@
+<map id="WindowsFormsApplication1.MainForm" name="WindowsFormsApplication1.MainForm">
+<area shape="rect" id="node3" href="$class_windows_forms_application1_1_1_form2.html" title="{WindowsFormsApplication1.\lForm2\n||+ Form2()\l# Dispose()\l&#45; InitializeComponent()\l}" alt="" coords="35,351,222,472"/>
+<area shape="rect" id="node5" href="$class_windows_forms_application1_1_1_teacher.html" title="{WindowsFormsApplication1.\lTeacher\n|&#45; textBox3\l&#45; textBox4\l&#45; textBox5\l|+ getText1()\l+ getText2()\l+ getText3()\l+ getText4()\l+ getText5()\l+ Teacher()\l# Dispose()\l&#45; button1_Click()\l&#45; InitializeComponent()\l}" alt="" coords="246,292,433,531"/>
+</map>

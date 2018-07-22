@@ -1,0 +1,4 @@
+<map id="TestStandartDialog.Individual" name="TestStandartDialog.Individual">
+<area shape="rect" id="node3" href="$class_test_standart_dialog_1_1_teacher.html" title="{TestStandartDialog.Teacher\n|&#45; textBox5\l|+ getText1()\l+ getText2()\l+ getText3()\l+ getText4()\l+ getText5()\l+ Teacher()\l# Dispose()\l&#45; InitializeComponent()\l}" alt="" coords="32,292,215,472"/>
+<area shape="rect" id="node5" href="$class_test_standart_dialog_1_1_form3.html" title="{TestStandartDialog.Form3\n||+ Form3()\l# Dispose()\l&#45; InitializeComponent()\l}" alt="" coords="240,329,413,435"/>
+</map>

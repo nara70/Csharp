@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['task_5f1',['Task_1',['../class_test_standart_dialog_1_1_task__1.html#aa88ae68d7d0eae5f87bb533850455c79',1,'TestStandartDialog::Task_1']]],
+  ['task_5f2',['Task_2',['../class_test_standart_dialog_1_1_task__2.html#af9602dec18203d7d1e8b103b2202bc3c',1,'TestStandartDialog::Task_2']]],
+  ['task_5f3',['Task_3',['../class_test_standart_dialog_1_1_task__3.html#ae86e23f5ddaec49cd0a5df9cea027bc5',1,'TestStandartDialog::Task_3']]],
+  ['task_5f4',['Task_4',['../class_test_standart_dialog_1_1_task__4.html#a6447f4422dc5bddba4f087416ce897ae',1,'TestStandartDialog::Task_4']]],
+  ['teacher',['Teacher',['../class_test_standart_dialog_1_1_teacher.html#a32ee663e342cc2b4c7c5fa09a981682a',1,'TestStandartDialog::Teacher']]],
+  ['toolstripbutton1_5fclick',['toolStripButton1_Click',['../class_test_standart_dialog_1_1_individual.html#ae108eb84c0fed2b10eb1f11399330149',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton2_5fclick',['toolStripButton2_Click',['../class_test_standart_dialog_1_1_individual.html#accc5796ca6c39d895aeec0b52c0b1381',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton3_5fclick',['toolStripButton3_Click',['../class_test_standart_dialog_1_1_individual.html#a19353321afad29fb62ec47a2cc17cd45',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton4_5fclick',['toolStripButton4_Click',['../class_test_standart_dialog_1_1_individual.html#a0cf3924f758f7894fc477256844ed1bb',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton5_5fclick',['toolStripButton5_Click',['../class_test_standart_dialog_1_1_individual.html#adcd7a07b2fb22e039487ed8e810e3bb4',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton6_5fclick',['toolStripButton6_Click',['../class_test_standart_dialog_1_1_individual.html#a437aee5ea36d127eabe2c6cdecddaac4',1,'TestStandartDialog::Individual']]],
+  ['toolstripbutton7_5fclick',['toolStripButton7_Click',['../class_test_standart_dialog_1_1_individual.html#a6960ea085008ca7fb24af8c425ad64e7',1,'TestStandartDialog::Individual']]],
+  ['toolstripmenuitem2_5fclick',['toolStripMenuItem2_Click',['../class_test_standart_dialog_1_1_task__4.html#a433564fec21af24733963d0a518831e1',1,'TestStandartDialog.Task_4.toolStripMenuItem2_Click()'],['../class_test_standart_dialog_1_1_task__1.html#a7d205c368e5200f93f5828845160ad9d',1,'TestStandartDialog.Task_1.toolStripMenuItem2_Click()'],['../class_test_standart_dialog_1_1_task__2.html#a6c2ea845004d67b39a61d4f3436b62c9',1,'TestStandartDialog.Task_2.toolStripMenuItem2_Click()'],['../class_test_standart_dialog_1_1_task__3.html#a13c97d047ee227a5bc2fee39116aa9db',1,'TestStandartDialog.Task_3.toolStripMenuItem2_Click()']]],
+  ['toolstripmenuitem4_5fclick',['toolStripMenuItem4_Click',['../class_test_standart_dialog_1_1_task__4.html#ad5bb47a4e0620fc99bbad8cd3838ff84',1,'TestStandartDialog.Task_4.toolStripMenuItem4_Click()'],['../class_test_standart_dialog_1_1_task__2.html#a0e727ebc76786f20c972c0ac73dbb1e9',1,'TestStandartDialog.Task_2.toolStripMenuItem4_Click()'],['../class_test_standart_dialog_1_1_task__3.html#aa4f44b3087af6b9466865ef75f7b6ae5',1,'TestStandartDialog.Task_3.toolStripMenuItem4_Click()']]],
+  ['toolstripmenuitem5_5fclick',['toolStripMenuItem5_Click',['../class_test_standart_dialog_1_1_task__4.html#ab0f9edac6aec2da60c297caa95766b2b',1,'TestStandartDialog.Task_4.toolStripMenuItem5_Click()'],['../class_test_standart_dialog_1_1_task__3.html#ae5f348f27d8046a63c87846532525f42',1,'TestStandartDialog.Task_3.toolStripMenuItem5_Click()']]],
+  ['toolstripmenuitem6_5fclick',['toolStripMenuItem6_Click',['../class_test_standart_dialog_1_1_task__4.html#afb72dcedf4d2ab57f56ac3ba25a85e60',1,'TestStandartDialog::Task_4']]],
+  ['toolstriptextbox1_5fclick',['toolStripTextBox1_Click',['../class_test_standart_dialog_1_1_task__4.html#aedf3c68355dd7ecc1c77d14ded821803',1,'TestStandartDialog::Task_4']]]
+];

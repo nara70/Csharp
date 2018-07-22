@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="Model1TargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Houses" EntityType="Model1.House" />
+          <EntitySet Name="Regions" EntityType="Model1.Region" />
+          <EntitySet Name="LinkHouseRegions" EntityType="Model1.LinkHouseRegion" />
+          <AssociationSet Name="LinkHouseRegionHouse" Association="Model1.LinkHouseRegionHouse">
+            <End Role="LinkHouseRegion" EntitySet="LinkHouseRegions" />
+            <End Role="House" EntitySet="Houses" />
+          </AssociationSet>
+          <AssociationSet Name="LinkHouseRegionRegion" Association="Model1.LinkHouseRegionRegion">
+            <End Role="LinkHouseRegion" EntitySet="LinkHouseRegions" />
+            <End Role="Region" EntitySet="Regions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="House">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeOfProject" Type="String" Nullable="false" />
+          <Property Name="AmountOfEnterences" Type="String" Nullable="false" />
+          <Property Name="AmountOfFloors" Type="String" Nullable="false" />
+          <Property Name="Date_" Type="String" Nullable="false" />
+          <NavigationProperty Name="LinkHouseRegion" Relationship="Model1.LinkHouseRegionHouse" FromRole="House" ToRole="LinkHouseRegion" />
+        </EntityType>
+        <EntityType Name="Region">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" />
+          <Property Name="AmountOfInhabitats" Type="String" Nullable="false" />
+          <Property Name="Area" Type="String" Nullable="false" />
+          <NavigationProperty Name="LinkHouseRegion" Relationship="Model1.LinkHouseRegionRegion" FromRole="Region" ToRole="LinkHouseRegion" />
+        </EntityType>
+        <EntityType Name="LinkHouseRegion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Houses" Relationship="Model1.LinkHouseRegionHouse" FromRole="LinkHouseRegion" ToRole="House" />
+          <NavigationProperty Name="Regions" Relationship="Model1.LinkHouseRegionRegion" FromRole="LinkHouseRegion" ToRole="Region" />
+        </EntityType>
+        <Association Name="LinkHouseRegionHouse">
+          <End Type="Model1.LinkHouseRegion" Role="LinkHouseRegion" Multiplicity="1" />
+          <End Type="Model1.House" Role="House" Multiplicity="*" />
+        </Association>
+        <Association Name="LinkHouseRegionRegion">
+          <End Type="Model1.LinkHouseRegion" Role="LinkHouseRegion" Multiplicity="1" />
+          <End Type="Model1.Region" Role="Region" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Model1" />
+        <Alias Key="Target" Value="Model1.Store" />
+        <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1TargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
